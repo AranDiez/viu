@@ -1,0 +1,977 @@
+<!-- DEBUG-VIEW START 3 APPPATH/Views/jornadascorporativa/agenda.php -->
+<!-- DEBUG-VIEW START 2 APPPATH/Views/Layouts/jornadasCorp_layout.php -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Graduacion VIU</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/cropped-cropped-viu-favicon-244-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="">
+    <header>
+      <img src="./assets/images/logo-viu.svg" alt="Logo Viu" />
+      <a
+        class="sectionIntro__btn-menu"
+        href="#formulario"
+        >Inscríbete</a
+      >
+      <div class="burger-menu">
+        <input id="burger_menu" type="checkbox" />
+        <nav class="burger-menu--active">
+          <div class="menu2" id="targetElement">
+            <!-- <a class="menu-link" href=""
+              >Streaming</a
+            > -->
+            <a id="btnDeta"
+              class="menu-link"
+              href="#detalles"
+              >¿Cuándo y dónde?</a
+            >
+            <a id="btnSost"
+              class="menu-link"
+              href="#soste"
+              >Graduación Sostenible y Accesible</a
+            >
+            <a id="btnForm"
+            class="menu-link" href="#formulario"
+              >Inscríbete</a
+            >
+            <a id="btnInsti"
+            class="menu-link" href="#institucional"
+            >Universidad VIU</a
+          >
+          <a id="btnTitu" 
+          class="menu-link" href="#titulo"
+          >Obtención título</a
+        >
+        <a id="btnDud" 
+        class="menu-link" href="#faqs"
+        >Resuelve tus dudas</a
+      >
+          </div>
+        </nav>
+        <label for="burger_menu">
+          <div class="burger-menu--icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
+    </header>
+    <main>
+      <section class="sectionIntro">
+        <img
+          class="sectionIntro__title"
+          src="./assets/images/h1.png"
+          alt="Imagen intro"
+        />
+        <div  class="sectionIntro__btns">
+          <a
+            class="sectionIntro__btn"
+            href="#detalles"
+            >Conoce más</a
+          >
+          <a
+            class="sectionIntro__btn"
+            href="#formulario"
+            >Inscríbete</a
+          >
+        </div>
+        <img
+        id="sectionIntro__triangle"
+        class="sectionIntro__triangle"
+        src="./assets/images/triangle.svg"
+        alt=""
+      />
+      </section>
+      <!-- <section class="sectionVideo" id="video">
+        <h2 class="sectionVideo__h2">
+          Sigue tu graduación en streaming
+        </h2>
+        <p class="sectionVideo__p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          veniam blanditiis distinctio iure possimus.
+        </p>
+        <div class="sectionVideo__boxiframe">
+        <iframe class="sectionVideo__iframe"
+        src="https://www.youtube.com/embed/5qrEU4OUeeE?autoplay=1&mute=1">
+        </iframe>
+      </div>
+      </section> -->
+      <section class="sectionDetalles" id="detalles">
+        <div class="title__box">
+        <h3 class="title__h3">Tu graduación</h3>
+        <p  class="title__p">Cuándo y dónde</p>
+      </div>
+      <div class="sectionDetalles__text">
+        <p class="sectionDetalles__p1">Llega el momento de celebrar</p>
+        <p  class="sectionDetalles__p2">presencialmente tu acto de graduación.</p>
+        <p  class="sectionDetalles__p3">La ocasión perfecta para desvirtualizar a tus docentes y compañeros.</p>
+        <p  class="sectionDetalles__p4">¡Te esperamos! </p>
+        <a
+        class="sectionDetalles__btn"
+        href="https://www.youtube.com/live/5qrEU4OUeeE?feature=share"
+        target="_blank"
+        >Síguela en streaming</a
+      >
+      </div>
+        <div class="sectionDetalles__boxes">
+          <div class="sectionDetalles__cuando">
+            <img
+            class="sectionDetalles__icon"
+            src="./assets/images/calendarIcon.svg"
+            alt="Calendar"
+          />
+            <h3>¿Cuándo?</h3>
+            <p  class="sectionDetalles__date">Sábado 17 de junio</p>
+            <p>Apertura de puertas - <span>16:00 (UTC+2)</span></p>
+            <p>Cierre de Puertas - <span>16:50 (UTC+2)</span></p>
+            <p>Inicio acto académico - <span>17:00 (UTC+2)</span></p>
+          </div>
+          <div class="sectionDetalles__donde">
+            <img
+            class="sectionDetalles__icon sectionDetalles__icon2"
+            src="./assets/images/mapsIcon.svg"
+            alt="Maps"
+          />
+            <h3>¿Dónde?</h3>
+            <p>Centro de Eventos de Feria de Valencia</p>
+            <p>Avenida de las Ferias s/n 46035 Valencia</p>
+          </div>
+        </div>
+      </section>
+      <section  id="soste"class="sectionSostAcce" id="sostenible">
+        <div class="sectionSost">
+        <div class="title__box">
+          <h3 class="title__h3">Tu graduación</h3>
+          <p  class="title__p">Será sostenible</p>
+        </div>
+        <div class="sectionSost__content">
+          <p>
+            El compromiso con la sostenibilidad y el impacto social de la
+            <span>Universidad Internacional de Valencia,</span> se aplica también a la
+            organización, diseño y producción de tu graduación.
+          </p>
+          <p>
+            Tu graduación se realizará obedeciendo a <span>criterios sostenibles,</span> utilizando
+            materiales respetuosos con el medio ambiente, fomentando la economía
+            local y realizando una gestión eficiente de recursos. Ayúdanos a hacerla aun más sostenible, desplazándote hasta el recinto en transporte público.
+          </p>
+          <p>Un motivo más
+            para estar orgulloso u orgullosa de <span>tu graduación.</span>
+          </p>
+        </div>
+      </div>
+
+        <div class="sectionAcces" id="accesibilidad">
+          <img
+          class="sectionAcces__img"
+          src="./assets/images/accesTitle.svg"
+          alt="Background"
+        />
+        <div>
+          <p>
+            Si tienes previsto acudir en silla de ruedas al recinto o tienes algún tipo de discapacidad auditiva o visual, escríbenos a
+          </p>
+          <a href="mailto:graduacionviu@acreditados.es"
+            >graduacionviu@acreditados.es</a
+          >
+          <p>una vez te hayas registrado, para tenerlo todo preparado y que vivas tu graduación sin ningún tipo de problemas. 
+          </p>
+        </div>
+        </div>
+      </section>
+      <section class="sectionForm" id="formulario">
+        <div class="title__box">
+          <h3 class="title__h3">¿Quieres asistir</h3>
+          <p  class="title__p">a la Graduación?</p>
+        </div>
+        <div  class="sectionForm__content">
+        <div class="sectionForm__left">
+          <img
+          class="sectionForm__img"
+          src="./assets/images/asiedForm.png"
+          alt="Background"
+        />
+        </div>
+        <div class="sectionForm__right">
+          <div class="sectionForm__white">
+          <h3 class="sectionForm__h3">Si eres estudiante de VIU, finalizas tu título durante el curso 22/23 y has recibido un email de invitación, rellena este formulario para registrar tu asistencia presencial.
+          </h3>
+          <!-- <p  class="sectionForm__p">Te estamos esperando</p> -->
+          <a href="https://www.graduacionviu2023.com/registroAlumnos/" target="_blank"><p
+          class="sectionForm__btn"
+          >REGISTRARSE</p
+        ></a>
+        <div class="iframebox">
+          <!-- <iframe
+            class="iframe"
+            src="https://viu-fe-ifycxo4noq-ew.a.run.app/sign-in/es "
+            width="100%"
+            height="90%"
+            style="border: none"
+            title="Formulario de registro"
+          ></iframe> -->
+        </div>
+
+        </div>
+        </div>
+      </div>
+      </section>
+      <section class="sectionCifras" id="cifras">
+        <div class="title__box">
+          <h3 class="title__h3">Tu promoción</h3>
+          <p  class="title__p">en cifras</p>
+        </div>
+        <div   class="sectionCifras__content">
+        <div  class="sectionCifras__left">
+        <p class="sectionCifras__number">17.668</p>
+        <p class="sectionCifras__title">Total de graduados</p>
+        <p class="sectionCifras__p1">Promoción <span>22/23</span></p>
+      </div>
+      <div  class="sectionCifras__right">
+        <img
+        class="sectionCifras__numberImg"
+        src="./assets/images/asideNumber.png"
+        alt="Calendar"
+      />
+      </div>
+    </div>
+      </section>
+      <section class="sectionAlumnis" id="alumnis">
+        <div class="title__box">
+          <h3 class="title__h3">Historias</h3>
+          <p  class="title__p">de alumnis</p>
+        </div>
+        <div class="sectionAlumnis__content">
+          <p class="sectionAlumnis__p1">
+            Conoce algunas historias de
+          </p>
+          <p class="sectionAlumnis__p2">
+            de otros alumni, que cómo tú
+          </p>
+          <p class="sectionAlumnis__p1">
+            decidieron
+            alcanzar sus metas en VIU.
+          </p>
+          <!-- <img
+          class="sectionAlumnis__logo"
+          src="./assets/images/logoAlone.svg"
+          alt="Title"
+        /> -->
+          <!-- <a class="sectionAlumnis__btn" href="">Conócelas</a> -->
+        </div>
+      </section>
+      <section class="sectionAlumnisDisplay" id="alumnisDisplay">
+        <!-- <div class="sectionAlumnisDisplay__title">
+          <h3 class="sectionAlumnisDisplay__h3">Historias de alumnis</h3>
+          <p class="sectionAlumnisDisplay__p1">
+            Conoce algunas historias de otros alumni, que cómo tú, decidieron
+            alcanzar sus metas en VIU.
+          </p>
+        </div> -->
+        <div class="sectionAlumnisDisplay__alumnis">
+            <div  class="sectionAlumnisDisplay__alumni">
+              <a target="_blank"
+              class="sectionAlumnisDisplay__alumniLink"
+              href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-miguel-barbero-esfuerzo-y-proposito-para-seguir-creciendo-siempre "
+              >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images//Miguel-Barbero.jpg"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Miguel Barbero</h4>
+                <p class="sectionAlumnisDisplay__alumnip">Esfuerzo y propósito para seguir creciendo siempre </p>
+                <p class="sectionAlumnisDisplay__alumnip2">Máster Oficial en Ciencias Avanzadas de la Nutrición Humana</p>
+</a>
+              </div>
+            </div>
+
+                <div  class="sectionAlumnisDisplay__alumni">
+                  <a target="_blank"
+                  class="sectionAlumnisDisplay__alumniLink"
+                  href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-juan-carlos-martin-garcia-aprendizaje-permanente-y-crecimiento-constante-toda-la-vida"
+                  >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images/Juan-Carlos-Martín-García.jpg"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Juan Carlos Martín García</h4>
+                <p class="sectionAlumnisDisplay__alumnip">Aprendizaje permanente y crecimiento constante, toda la vida</p>
+                <p class="sectionAlumnisDisplay__alumnip2">Máster Oficial en Ingeniería Biomédica </p>
+</a
+              >
+            </div>
+            </div>
+
+                <div  class="sectionAlumnisDisplay__alumni">
+                  <a target="_blank"
+                  class="sectionAlumnisDisplay__alumniLink"
+                  href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-mari-carmen-morales-aprendizaje-continuo-para-innovar-en-atencion-temprana"
+                  >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images/Mari-Carmen-Morales.png"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Mari Carmen Morales</h4>
+                <p class="sectionAlumnisDisplay__alumnip">Aprendizaje continuo para innovar en atención temprana</p>
+                <p class="sectionAlumnisDisplay__alumnip2">Máster Universitario en Necesidades Educativas Especiales y Atención Temprana</p>
+</a
+              >
+            </div>
+            </div>
+
+              <div  class="sectionAlumnisDisplay__alumni">
+                <a target="_blank"
+                class="sectionAlumnisDisplay__alumniLink"
+                href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-cristian-rodriguez-convertir-la-pasion-por-la-criminologia-en-profesion"
+                >
+                <img
+                class="sectionAlumnisDisplay__alumniImg"
+                src="./assets/images/Cristian-Rodriguez.jpg"
+                alt="Title"
+              />
+              <div>
+              <h4 class="sectionAlumnisDisplay__alumnih4">Cristian Rodríguez</h4>
+              <p class="sectionAlumnisDisplay__alumnip">Convertir la pasión por la criminología en profesión</p>
+              <p class="sectionAlumnisDisplay__alumnip2">Grado en Criminología y Ciencias de la Seguridad</p>
+</a
+            >
+          </div>
+          </div>
+
+                  <div  class="sectionAlumnisDisplay__alumni">
+                    <a target="_blank"
+                    class="sectionAlumnisDisplay__alumniLink"
+                    href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-entretener-educar-y-democratizar-el-conocimiento-cientifico-traves-de-la-divulgacion"
+                    >
+                    <img
+                    class="sectionAlumnisDisplay__alumniImg"
+                    src="./assets/images/Julián-Guercetti.jpg"
+                    alt="Title"
+                  />
+                  <div>
+                  <h4 class="sectionAlumnisDisplay__alumnih4">Julián Guercetti</h4>
+                  <p class="sectionAlumnisDisplay__alumnip">Entretener, educar y democratizar el conocimiento científico a través de la divulgación</p>
+                  <p class="sectionAlumnisDisplay__alumnip2"> Máster Oficial en Comunicación Social de la Investigación Científica</p>
+</a
+                  >
+                </div>
+                  </div>
+
+                <div  class="sectionAlumnisDisplay__alumni">
+                  <a target="_blank"
+                  class="sectionAlumnisDisplay__alumniLink"
+                  href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-francisco-paredes-investigacion-para-mejorar-la-practica-asistencial"
+                  >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images/Francisco-Paredes.jpg"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Francisco Paredes</h4>
+                <p class="sectionAlumnisDisplay__alumnip">Investigación para mejorar la práctica asistencial</p>
+                <p class="sectionAlumnisDisplay__alumnip2">Máster Oficial en Dirección y Gestión de Enfermería</p>
+</a
+                >
+              </div>
+                </div>
+                <div  class="sectionAlumnisDisplay__alumni">
+                  <a target="_blank"
+                  class="sectionAlumnisDisplay__alumniLink"
+                  href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-matias-alonso-astronomia-y-astrofotografia-para-nunca-dejar-de-aprender"
+                  >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images/Matías-Alonso.jpg"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Matías Alonso</h4>
+                <p class="sectionAlumnisDisplay__alumnip">Astronomía y astrofotografía para nunca dejar de aprender</p>
+                <p class="sectionAlumnisDisplay__alumnip2">Experto Universitario en Astronomía Observacional</p>
+</a
+              >
+            </div>
+            </div>
+
+                <div  class="sectionAlumnisDisplay__alumni">
+                  <a target="_blank"
+                  class="sectionAlumnisDisplay__alumniLink"
+                  href="https://www.universidadviu.com/es/actualidad/noticias/estudiantes-viu-yorley-ruiz-m-la-importancia-de-la-voz-propia-la-hora-de-hacer-divulgacion-cientifica"
+                  >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images/Yorley-Ruíz.jpg"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Yorley Ruiz M.</h4>
+                <p class="sectionAlumnisDisplay__alumnip">La importancia de la voz propia a la hora de hacer divulgación científica</p>
+                <p class="sectionAlumnisDisplay__alumnip2"> Máster Oficial en Comunicación de la Investigación Científica</p>
+</a
+              >
+            </div>
+            </div>
+
+                <div  class="sectionAlumnisDisplay__alumni">
+                  <a target="_blank"
+                  class="sectionAlumnisDisplay__alumniLink"
+                  href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-danna-carolina-rivera-la-pasion-por-aprender-como-camino-una-sociedad-mas-justa"
+                  >
+                  <img
+                  class="sectionAlumnisDisplay__alumniImg"
+                  src="./assets/images/Danna-Carolina-Rivera.jpg"
+                  alt="Title"
+                />
+                <div>
+                <h4 class="sectionAlumnisDisplay__alumnih4">Danna Carolina Rivera</h4>
+                <p class="sectionAlumnisDisplay__alumnip">La pasión por aprender como camino a una sociedad más justa</p>
+                <p class="sectionAlumnisDisplay__alumnip2">Máster Oficial en intervención interdisciplinar en violencia de género</p>
+</a
+              >
+            </div>
+            </div>
+
+              <div  class="sectionAlumnisDisplay__alumni">
+                <a target="_blank"
+                class="sectionAlumnisDisplay__alumniLink"
+                href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-alvaro-saez-de-construir-robots-con-7-anos-estar-en-la-vanguardia-de-la-revolucion-ia"
+                >
+                <img
+                class="sectionAlumnisDisplay__alumniImg"
+                src="./assets/images/Alvaro-Saez.jpg"
+                alt="Title"
+              />
+              <div>
+              <h4 class="sectionAlumnisDisplay__alumnih4">Álvaro Sáez</h4>
+              <p class="sectionAlumnisDisplay__alumnip">De construir robots con 7 años a estar en la vanguardia de la revolución IA</p>
+              <p class="sectionAlumnisDisplay__alumnip2">Máster Oficial en Inteligencia Artificial</p>
+</a
+            >
+          </div>
+          </div>
+
+            <div  class="sectionAlumnisDisplay__alumni">
+              <a target="_blank"
+              class="sectionAlumnisDisplay__alumniLink"
+              href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-cancer-infantil-la-importancia-de-la-psicooncologia"
+              >
+              <img
+              class="sectionAlumnisDisplay__alumniImg"
+              src="./assets/images/CynthiaCastilla-Marcos.jpg"
+              alt="Title"
+            />
+            <div>
+            <h4 class="sectionAlumnisDisplay__alumnih4">Cynthia Castilla Marcos</h4>
+            <p class="sectionAlumnisDisplay__alumnip">La importancia de la psicooncología</p>
+            <p class="sectionAlumnisDisplay__alumnip2">Máster Oficial en Neuropsicología Clínica</p>
+            </a
+            >
+          </div>
+            </div>
+
+          <div  class="sectionAlumnisDisplay__alumni">
+            <a target="_blank"
+            class="sectionAlumnisDisplay__alumniLink"
+            href="https://www.universidadviu.com/es/actualidad/noticias/alumni-viu-jesus-estevez-investigar-para-rescatar-el-patrimonio-musical-de-quito"
+            >
+            <img
+            class="sectionAlumnisDisplay__alumniImg"
+            src="./assets/images/Jesús-Estévez.jpg"
+            alt="Title"
+          />
+          <div>
+          <h4 class="sectionAlumnisDisplay__alumnih4">Jesús Estévez</h4>
+          <p class="sectionAlumnisDisplay__alumnip">Investigar para rescatar el patrimonio musical de Quito</p>
+          <p class="sectionAlumnisDisplay__alumnip2 ">Máster Oficial en Interpretación e Investigación Musical</p>
+</a
+          >
+        </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionInstitucional" id="institucional">
+        <div class="title__box title__box--insti">
+          <h3 class="title__h3">Universidad Internacional de Valencia</h3>
+        </div>
+        <div class="sectionInstitucional__left">
+          <p class="sectionInstitucional__p1">
+            Con más de 23.600 estudiantes de 86 nacionalidades en 84 países y un
+            claustro de más de 2.330 docentes, la Universidad Internacional de
+            Valencia – VIU es una de las principales universidades online del
+            mundo hispanohablante.
+          </p>
+          <p class="sectionInstitucional__p1">
+            Ponemos la innovación tecnológica al servicio de tu formación,
+            ofreciéndote un campus virtual premiado internacionalmente, una
+            metodología online flexible que se adapta a tus necesidades y una
+            oferta formativa universitaria online internacional y en consonancia
+            con las necesidades del mercado laboral y la sociedad actual.
+          </p>
+        </div>
+        <div class="sectionInstitucional__infografia">
+          <div class="sectionInstitucional__infografiablock">
+            <img
+              class="sectionInstitucional__img"
+              src="./assets/images/viu-icon-1.svg"
+              alt="Infografía"
+            />
+            <p class="sectionInstitucional__h4">
+              Acompañamiento personalizado.
+            </p>
+            <p class="sectionInstitucional__p1">
+              Orientador académico a tu disposición
+            </p>
+          </div>
+          <div class="sectionInstitucional__infografiablock">
+            <img
+              class="sectionInstitucional__img"
+              src="./assets/images/viu-icon-2.svg"
+              alt="Infografía"
+            />
+            <p class="sectionInstitucional__h4">
+              Docentes expertos en formación digital.
+            </p>
+            <p class="sectionInstitucional__p1">
+              Aprovecha todo el potencial de la tectnología para tu formación.
+            </p>
+          </div>
+          <div class="sectionInstitucional__infografiablock">
+            <img
+              class="sectionInstitucional__img"
+              src="./assets/images/viu-icon-3.svg"
+              alt="Infografía"
+            />
+            <p class="sectionInstitucional__h4">
+              Modelo Académico desde la excelencia.
+            </p>
+            <p class="sectionInstitucional__p1">
+              Innovación tecnológica y excelencia académica con un solo fin:
+              ayudarte a lograr tus metas.
+            </p>
+          </div>
+          <div class="sectionInstitucional__infografiablock">
+            <img
+              class="sectionInstitucional__img"
+              src="./assets/images/viu-icon-4.svg"
+              alt="Infografía"
+            />
+            <p class="sectionInstitucional__h4">Metodología Online Flexible.</p>
+            <p class="sectionInstitucional__p1">
+              Accede a tu universidad donde y cuando quieras.
+            </p>
+          </div>
+        </div>
+        <p class="sectionInstitucional__busque">
+          Búsqueda permanente de la excelencia para tu crecimiento
+        </p>
+        <p class="sectionInstitucional__p2">
+          La mejora constante para ofrecerte la mejor experiencia formativa, es
+          la máxima que guía nuestros esfuerzos. Por ello hemos recibido, entre
+          otros, los siguientes reconocimientos: Premio internacional Blackboard
+          Catalyst por por tres años consecutivos (2020, 2021 y 2022), que
+          reconoce nuestro Campus Virtual como el mejor de España y uno de los
+          mejores del mundo en experiencia de usuario; Mejor Universidad Online
+          de España, según World University Ranking de la plataforma de
+          tecnología educativa Studocu*.
+        </p>
+        <p class="sectionInstitucional__p3">
+          *En base a las opiniones de 100.000 estudiantes de 30 países.
+        </p>
+      </section>
+      <section class="sectionTitulo" id="titulo">
+        <div class="title__box title__box--titulo">
+          <h3 class="title__h3">¿Cómo obtener tu título</h3>
+          <p  class="title__p">en formato físico?</p>
+        </div>
+        <div class="sectionTitulo__left">
+          <p class="sectionTitulo__p1">
+            Ahora que llega tu graduación, sabemos que querrás saber todos los
+            detalles para poder solicitar tu título en formato físico. Te
+            contamos cómo podrás hacerlo, una vez hayas completado el total de
+            tus créditos.
+          </p>
+        </div>
+        <div class="sectionTitulo__right">
+          <div class="sectionTitulo__grado">
+            <p class="sectionTitulo__p2">
+              OBTENCIÓN TÍTULO GRADO O MÁSTER UNIVERSITARIO
+            </p>
+            <a target="_blank"
+              class="sectionTitulo__btn"
+              href="https://soporteviu.zendesk.com/hc/es/articles/360010111039-Solicitud-de-T%C3%ADtulo-Oficial"
+              >Infórmate aquí</a
+            >
+          </div>
+          <div class="sectionTitulo__propio">
+            <p class="sectionTitulo__p2">OBTENCIÓN TÍTULO MÁSTER PROPIO</p>
+            <a target="_blank"
+              class="sectionTitulo__btn"
+              href="https://soporteviu.zendesk.com/hc/es/articles/360018971160-Solicitud-de-T%C3%ADtulo-Propio "
+              >Infórmate aquí</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="sectionFaqs" id="faqs">
+        
+        <h3 class="sectionTitulo__h3">FAQS</h3>
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck0" />
+          <label class="sectionFaqs__tab-label" for="chck0"
+            >Todavía tengo materias por superar ¿es esta mi graduación?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Sí, esta es tu graduación, ya que la ceremonia se rige por la promoción de egreso, aunque tengas materias pendientes, o TFM y/o prácticas por hacer/aprobar.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck1" />
+          <label class="sectionFaqs__tab-label" for="chck1"
+            >¿Puedo asistir presencialmente?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Si, podrás asistir presencialmente. Para hacerlo, es muy importante que te registres previamente en esta web o a través del enlace que has recibido por email. ¡Te esperamos! 
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck2" />
+          <label class="sectionFaqs__tab-label" for="chck2"
+            >¿Se va a retransmitir la graduación vía online?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Sí, tu Graduación será transmitida en su totalidad a través de nuestro canal de YouTube en directo. Para seguirla no hace falta inscripción, basta con conectarse al canal de Youtube de VIU a la hora que comienza la ceremonia. Además, tu graduación quedará grabada y podrás verla de nuevo cuantas veces quieras, y compartirla con quien desees. 
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck3" />
+          <label class="sectionFaqs__tab-label" for="chck3"
+            >¿A qué hora es la graduación en mi país?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              La graduación comenzará a las 17:00 hrs UTC/GMT+2 (hora de Madrid). Puedes consultar las diferencias horarias de numerosas zonas del mundo en 
+              <a target="_blank"
+                class="text-viu"
+                href="https://www.elmundo.es/imasd/explica/diferencias_horarias/"
+              >
+                este enlace.</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck4" />
+          <label class="sectionFaqs__tab-label" for="chck4"
+            >Tengo una duda respecto a la Graduación ¿Dónde puedo
+            resolverla?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Si tienes cualquier duda o consulta sobre tu graduación, puedes ponerte en contacto con nosotros en el mail 
+              <a href="mailto:graduacionviu@acreditados.es"
+                >graduacionviu@acreditados.es</a
+              >
+              o a través del teléfono
+              <a href="tel:+34951410173">+34 951 410 173 </a>Línea abierta de 09:00 a 14:00 (UTC+2)
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck5" />
+          <label class="sectionFaqs__tab-label" for="chck5"
+            >Si asisto presencialmente ¿Puedo llevar invitados?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Para asegurarnos de poder ofrecerte la mejor experiencia posible, la inscripción para asistir presencialmente se divide en dos fases: la primera está limitada exclusivamente a quienes se gradúan. Una vez concluida esta primera etapa de inscripción, y según aforo, se abrirá una segunda fase de inscripción de invitados. Tranquilo/a; te avisaremos por email cuando puedas inscribir a tus invitados.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck6" />
+          <label class="sectionFaqs__tab-label" for="chck6"
+            >¿Cómo puedo llegar al Centro de Eventos de Feria de
+            Valencia?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              El Centro de Eventos de Feria de Valencia, donde se celebrará tu graduación está totalmente conectado y existen múltiples opciones de acceso que incluyen tren, autobús y metro. Puedes consultar todos los detalles al respecto en 
+              <a  target="_blank" 
+                class="text-viu"
+                href="https://www.feriavalencia.com/como-llegar-al-centro-de-eventos-de-feria-valencia/"
+                >este enlace.</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck7" />
+          <label class="sectionFaqs__tab-label" for="chck7"
+            >¿Puedo solicitar un certificado oficial para tramitar un visado,
+            con el fin de asistir a la graduación?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Si, por supuesto, ponte en contacto con nosotros a través del mail
+              <a href="mailto:graduacionviu@acreditados.es"
+                >graduacionviu@acreditados.es</a
+              >
+              o con tu orientador académico y te lo facilitaremos.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck8" />
+          <label class="sectionFaqs__tab-label" for="chck8"
+            >¿La graduación será accesible para todo tipo de estudiantes?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Por supuesto. Si tienes previsto acudir en silla de ruedas al recinto o tienes algún tipo de discapacidad auditiva o visual, escríbenos a 
+              <a href="mailto:graduacionviu@acreditados.es"
+                >graduacionviu@acreditados.es</a
+              >
+              una vez te hayas registrado, para tenerlo todo preparado para ti.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck9" />
+          <label class="sectionFaqs__tab-label" for="chck9"
+            >¿Qué se entregará a los estudiantes durante el acto académico?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              En el momento de la ceremonia se impodrá la beca a los estudiantes que asistan presencialmente. Recuerda que el título oficial deberá solicitarse siguiendo el procedimiento indicado en esta web en la sección <span><a href="#titulo"
+                >¿Cómo obtener tu título en formato físico?</a
+              ></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck10" />
+          <label class="sectionFaqs__tab-label" for="chck10"
+            >¿Podrás recibir una beca si no puedes asistir presencialmente al acto de Graduación?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              No, la beca únicamente se entrega a los estudiantes que asistan presencialmente.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck11" />
+          <label class="sectionFaqs__tab-label" for="chck11"
+            >¿Te nombrarán durante la ceremonia?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Solo se nombrará a los estudiantes que acudan al acto de graduación presencialmente. Los estudiantes que sigan la graduación en streaming, no serán nombrados, ni aparecerán en pantalla.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck12" />
+          <label class="sectionFaqs__tab-label" for="chck12"
+            >¿En qué consiste la asistencia virtual y en streaming a la graduación?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Podrás seguir en directo vía online lo que ocurre durante el acto. La Graduación será retransmitida a traves de nuestro canal de YouTube y en esta misma web. Recuerda que no se nombrará a los estudiantes que sigan el evento de manera online, ni aparecerán en pantalla.
+            </p>
+          </div>
+        </div>
+
+        <div class="sectionFaqs__tab">
+          <input type="checkbox" id="chck13" />
+          <label class="sectionFaqs__tab-label" for="chck13"
+            >¿Qué estudiantes están convocados a la Graduación 2023?</label
+          >
+          <div class="sectionFaqs__tab-content">
+            <p>
+              Estudiantes que por su promoción de estudios, tienen su egreso en el año 2023 según su año de matriculación. Independientemente que hayan superado o no todas las asignaturas.
+            </p>
+          </div>
+        </div>
+
+
+      </section>
+      <section class="sectionAyuda" id="ayuda">
+        <h3 class="sectionAyuda__h3">Ayuda y contacto</h3>
+        <p class="sectionAyuda__p1">
+          Si tienes cualquier duda o consulta sobre tu graduación, puedes
+          ponerte en contacto con nosotros en el mail
+          <a href="mailto:graduacionviu@acreditados.es"
+            >graduacionviu@acreditados.es</a
+          >
+          o a través del teléfono
+          <a href="tel:+34951410173">+34 951 410 173</a> Línea abierta de 10:00
+          a 14:00 (UTC+2).
+        </p>
+      </section>
+      <footer class="footer">
+        <div class="footer__top">
+        <img
+          class="footer__logo"
+          src="./assets/images/logoViuWhite.png"
+          alt="Logo Viu"
+        />
+        <p>
+          ©2023 VIU Universidad Internacional de Valencia.<br />Todos los
+          derechos reservados
+        </p>
+        <div>
+          <a
+            href=" https://www.facebook.com/UniversidadVIU/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img class="" src="./assets/images/footer-facebook.svg" />
+          </a>
+          <a
+            href="https://twitter.com/UniversidadVIU"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img src="./assets/images/footer-twitter.svg" />
+          </a>
+          <a
+            href="https://www.instagram.com/universidadviu/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img " src="./assets/images/footer-instagram.svg">
+          </a>
+          <a
+            href="https://www.linkedin.com/school/universidadviu/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img src="./assets/images/footer-linkedin.svg" />
+          </a>
+        </div>
+
+        <div class="footer__legal">
+          <ul class="footer__ul">
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/politica-de-cookies"
+                target="_blank"
+                class="footer__link"
+                >Política de cookies</a
+              >
+            </li>
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/normativa"
+                target="_blank"
+                class="footer__link"
+                >Normativa</a
+              >
+            </li>
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/condiciones-de-uso-de-la-web"
+                target="_blank"
+                class="footer__link"
+                >Condiciones de uso</a
+              >
+            </li>
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/politica-de-privacidad"
+                target="_blank"
+                class="footer__link"
+                >Políticas de privacidad</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="footer__bottom">
+
+            <img src="./assets/images/f-logo-1.png" alt="Logo">
+
+            <img src="./assets/images/f-logo-2.png" alt="Logo">
+
+            <img src="./assets/images/f-logo-3.png" alt="Logo">
+
+            <img src="./assets/images/f-logo-4.png" alt="Logo">
+
+            <img src="./assets/images/f-logo-5.png" alt="Logo">
+ 
+            <img src="./assets/images/f-logo-6.png" alt="Logo">
+
+            <img src="./assets/images/f-logo-7.png" alt="Logo">
+
+            <img src="./assets/images/f-logo-8.png" alt="Logo">
+        </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- <div class="pop-up">
+      <a href="#" class="close-button">X</a>
+      <p>POP UP</p>
+      <a href="https://dnschecker.org/#A/graduacionviu.com" class="button"
+        >Registro</a
+      >
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+    <style>
+      dialog {
+        color: red;
+      }
+      dialog::backdrop {
+        background-color: rgba(35, 125, 222, 0.7);
+      }
+    </style>
+
+  </body>
+</html>

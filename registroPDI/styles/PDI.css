@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Visuelt Regular';
+  src: url('../assets/fonts/visuelt-regular-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visuelt Light';
+  src: url('../assets/fonts/visuelt-light-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visuelt Bold';
+  src: url('../assets/fonts/visuelt-bold-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visuelt Light Italic';
+  src: url('../assets/fonts/visuelt-light-italic-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visuelt Bold Italic';
+  src: url('../assets/fonts/visuelt-bold-italic-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Visuelt Italic';
+  src: url('../assets/fonts/visuelt-italic-pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Periodico Display Regular';
+  src: url('../assets/fonts/PeriodicoDisplay-Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Periodico Display SemiBold';
+  src: url('../assets/fonts/PeriodicoDisplay-SmBd.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Periodico Display Light';
+  src: url('../assets/fonts/PeriodicoDisplay-UtLg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --grey: #333333;
+  --black: #222222;
+  --orange-white: #fbf4f7;
+  --white: #ffff;
+  --orange: #e65014;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white);
+  font-family: 'Visuelt Regular';
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+/* ------------------------------------------------------ SCROLL */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- HEADER */
+
+header {
+  height: 8vh;
+  padding: 10px;
+  background-color: var(--white);
+  min-height: 70px;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Helvetica';
+
+  z-index: 2;
+}
+header img {
+  width: 150px;
+  max-width: 200px;
+  margin-left: 40px;
+  z-index: 3;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- SECTION 1 */
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+.section1 span {
+  color: var(--orange);
+}
+.section1__left {
+  height: 150px;
+  background-image: url(../assets/images/PDI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 30px;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+
+.section1__right {
+  width: 100%;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(205, 205, 205, 0.1) 100%
+  );
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.section1__h1 {
+  background-color: var(--orange);
+  color: var(--white);
+  width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 15px 15px 15px;
+  margin-left: 10px;
+  margin-top: 40px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+.section1__title {
+  width: 60%;
+  max-width: 450px;
+}
+
+@media only screen and (min-width: 900px) {
+  .section1__left {
+    height: 89vh;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .section1__title {
+    min-width: 250px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .section1__left {
+    width: 50%;
+  }
+  .section1__right {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section1__right {
+    padding-top: 40px;
+  }
+}
+
+.footer {
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 50px;
+}
+.footer__img {
+  width: 300px;
+}
+.iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+@media only screen and (min-width: 900px) {
+  .footer {
+    flex-direction: row;
+  }
+  .iframe {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+.page-wrapper[_ngcontent-jgi-c12] {
+  min-height: 100px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

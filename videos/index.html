@@ -1,0 +1,329 @@
+<!-- DEBUG-VIEW START 3 APPPATH/Views/jornadascorporativa/agenda.php -->
+<!-- DEBUG-VIEW START 2 APPPATH/Views/Layouts/jornadasCorp_layout.php -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Graduacion VIU</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/cropped-cropped-viu-favicon-244-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="../styles/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://app.sendsafely.com/js/external/SendSafelyDropzone.min.js"></script>
+
+  </head>
+
+  <body class="">
+    <header>
+      <img src="../assets/images/logo-viu.svg" alt="Logo Viu" />
+      <a
+        class="sectionIntro__btn-menu"
+        href="#formulario"
+        >Inscríbete</a
+      >
+      <div class="burger-menu">
+        <input id="burger_menu" type="checkbox" />
+        <nav class="burger-menu--active">
+          <div class="menu2" id="targetElement">
+            <!-- <a class="menu-link" href=""
+              >Streaming</a
+            > -->
+            <a id="btnDeta"
+              class="menu-link"
+              href="#detalles"
+              >¿Cuándo y dónde?</a
+            >
+            <a id="btnSost"
+              class="menu-link"
+              href="#soste"
+              >Graduación Sostenible y Accesible</a
+            >
+            <a id="btnForm"
+            class="menu-link" href="#formulario"
+              >Inscríbete</a
+            >
+            <a id="btnInsti"
+            class="menu-link" href="#institucional"
+            >Universidad VIU</a
+          >
+          <a id="btnTitu" 
+          class="menu-link" href="#titulo"
+          >Obtención título</a
+        >
+        <a id="btnDud" 
+        class="menu-link" href="#faqs"
+        >Resuelve tus dudas</a
+      >
+          </div>
+        </nav>
+        <label for="burger_menu">
+          <div class="burger-menu--icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
+    </header>
+    <main>
+      <section class="sectionIntro">
+        <img
+          class="sectionIntro__title"
+          src="../assets/images/h1.png"
+          alt="Imagen intro"
+        />
+        <div  class="sectionIntro__btns">
+          <a
+            class="sectionIntro__btn"
+            href="#detalles"
+            >Conoce más</a
+          >
+          <a
+            class="sectionIntro__btn"
+            href="#formulario"
+            >Inscríbete</a
+          >
+          <input type="text" class="hidden" style="display:none" id="email" name="" value="carlos.garcia@4foreverything.com">
+          <div class="upload-title">Upload your graphics</div>
+          <div id="placeholder">
+                <input type="text" id="input">
+          </div>
+          <button class="upload-button" id="upload" type="button" onclick="submitForm()">Upload</button>
+          <div class="success-upload" id="success-upload" >
+              <p class="hidden " id="success-upload-text">
+                  Upload successful
+              </p>
+          </div>
+        </div>
+        <img
+        id="sectionIntro__triangle"
+        class="sectionIntro__triangle"
+        src="../assets/images/triangle.svg"
+        alt=""
+      />
+      </section>
+      <footer class="footer">
+        <div class="footer__top">
+        <img
+          class="footer__logo"
+          src="../assets/images/logoViuWhite.png"
+          alt="Logo Viu"
+        />
+        <p>
+          ©2023 VIU Universidad Internacional de Valencia.<br />Todos los
+          derechos reservados
+        </p>
+        <div>
+          <a
+            href=" https://www.facebook.com/UniversidadVIU/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img class="" src="../assets/images/footer-facebook.svg" />
+          </a>
+          <a
+            href="https://twitter.com/UniversidadVIU"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img src="../assets/images/footer-twitter.svg" />
+          </a>
+          <a
+            href="https://www.instagram.com/universidadviu/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img " src="../assets/images/footer-instagram.svg">
+          </a>
+          <a
+            href="https://www.linkedin.com/school/universidadviu/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img src="../assets/images/footer-linkedin.svg" />
+          </a>
+        </div>
+
+        <div class="footer__legal">
+          <ul class="footer__ul">
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/politica-de-cookies"
+                target="_blank"
+                class="footer__link"
+                >Política de cookies</a
+              >
+            </li>
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/normativa"
+                target="_blank"
+                class="footer__link"
+                >Normativa</a
+              >
+            </li>
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/condiciones-de-uso-de-la-web"
+                target="_blank"
+                class="footer__link"
+                >Condiciones de uso</a
+              >
+            </li>
+            <li class="footer__li">
+              <a
+                href="https://www.universidadviu.com/es/politica-de-privacidad"
+                target="_blank"
+                class="footer__link"
+                >Políticas de privacidad</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="footer__bottom">
+
+            <img src="../assets/images/f-logo-1.png" alt="Logo">
+
+            <img src="../assets/images/f-logo-2.png" alt="Logo">
+
+            <img src="../assets/images/f-logo-3.png" alt="Logo">
+
+            <img src="../assets/images/f-logo-4.png" alt="Logo">
+
+            <img src="../assets/images/f-logo-5.png" alt="Logo">
+ 
+            <img src="../assets/images/f-logo-6.png" alt="Logo">
+
+            <img src="../assets/images/f-logo-7.png" alt="Logo">
+
+            <img src="../assets/images/f-logo-8.png" alt="Logo">
+        </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- <div class="pop-up">
+      <a href="#" class="close-button">X</a>
+      <p>POP UP</p>
+      <a href="https://dnschecker.org/#A/graduacionviu.com" class="button"
+        >Registro</a
+      >
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="../js/main.js"></script>
+    <style>
+      dialog {
+        color: red;
+      }
+      dialog::backdrop {
+        background-color: rgba(35, 125, 222, 0.7);
+      }
+    </style>
+    <script>
+        
+var dropzoneId = 'i9o0c9SFtQctedRTmQ3an3nhWVmPqPcOrVOo3fXb5yY';
+var placeholderElement = $('#placeholder');
+var formField = $('#input');
+
+if (window.location.pathname.split("/").pop() != 'stand') {
+	var widget = new SendSafelyDropzone(dropzoneId, placeholderElement, formField);
+
+	widget.BACKGROUND_COLOR = 'ffffff';
+	widget.filePrefix = 'VIU2023-'
+
+	let sendSafelyHost = 'https://4foreverything.sendsafely.eu';
+	widget.url = sendSafelyHost
+
+	widget.initialize();
+	widget.addFrameListener('file-uploaded', function (data) {
+		document.getElementById('upload').classList.add('active-upload')
+	})
+	widget.disableAutoSubmit = true;
+
+	function submitForm() {
+		var secureMessage = buildSecureMessage();
+		widget.setUnconfirmedSender(
+			$("#email").val().toLowerCase()
+		);
+		widget.addMessage(secureMessage);
+		widget.finalizePackage(
+			function (url) {
+				submitHostedDropzone(url);
+			});
+	}
+
+	function buildSecureMessage() {
+		var secureMessage = "";
+		$("#dropzone_form input[type=text]").each(function () {
+			console.log($(this))
+			if (this.name.startsWith("secure_")) {
+				secureMessage += $(this).attr("id") + ": " + this.value + "\n";
+			}
+		});
+		return secureMessage;
+	}
+
+	function submitHostedDropzone(url) {
+		var postData = {};
+		postData["email"] = $("#email").val();
+		console.log(widget)
+		postData["packageCode"] = widget.packageCode;
+		postData["publicApiKey"] = dropzoneId;
+		//here is the callback I need to prevent
+		$.post(
+			sendSafelyHost + "/auth/json/?action=submitHostedDropzone",
+			postData,
+			function (result) {
+				if (result.integrationUrls !== undefined) {
+					for (i = 0; i < result.integrationUrls.length; i++) {
+						var integrationUrl = result.integrationUrls[i];
+						console.log(integrationUrl)
+						console.log(result)
+						//Third party form integration...do post to URL
+						var postData = {};
+						postData["digest"] = result.digest;
+						postData["data"] = result.data;
+						postData["secureLink"] = url;
+						$.post(
+							integrationUrl,
+							postData,
+							function (json) {
+								if (json.error != undefined) {
+									alert(json.error);
+								} else {
+									//success
+									// alert("File submitted.");
+									$('#success-upload-text').removeClass('hidden')
+									console.log(json)
+									// document.getElementById('sendsafely-attached-file-list').style.display = 'none';
+									setTimeout(function () {
+										$('#modal-background-upload').addClass('hidden')
+										$('#success-upload-text').addClass('hidden')
+									}, 2000);
+								}
+							},
+							"json"
+						);
+					}
+				}
+			}
+		);
+	}
+}
+    </script>
+  </body>
+</html>
